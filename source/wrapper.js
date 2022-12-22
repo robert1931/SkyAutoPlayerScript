@@ -2,7 +2,7 @@
 "use strict";
 /*
     SkyAutoPlayer (Auto.js script)
-  	Copyright © 2020-2021 StageGuard
+  	Copyright © 2020-2021 robert1931
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -24,10 +24,10 @@
     emitter.emit("evaluate", (function () {
       //Many sources 
       let sources = [
-        "http://cdn.stagex.top:8090/StageGuard/SkyAutoPlayerScript/raw/master/source/SkyAutoplayer.js",
-        "https://cdn.jsdelivr.net/gh/StageGuard/SkyAutoPlayerScript/source/SkyAutoplayer.js",
-        "https://dl.skyautoplayerscript.stageguard.top/source/SkyAutoplayer.js",
-        "https://raw.githubusercontent.com/StageGuard/SkyAutoPlayerScript/master/source/SkyAutoplayer.js"
+        "http://cdn.stagex.top:8090/robert1931/SkyAutoPlayerScript/raw/master/source/SkyAutoplayer.js",
+        "https://cdn.jsdelivr.net/gh/robert1931/SkyAutoPlayerScript/source/SkyAutoplayer.js",
+        "https://dl.skyautoplayerscript.robert1931.top/source/SkyAutoplayer.js",
+        "https://raw.githubusercontent.com/robert1931/SkyAutoPlayerScript/master/source/SkyAutoplayer.js"
       ];
       for (let i in sources) {
         let resp = http.get(sources[i]);
