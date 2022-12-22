@@ -643,7 +643,7 @@ config = {
 	},
 	
 	checkVersion: function() {
-		this.values.gitVersion = http.get("http://81.70.194.140:8090/StageGuard/SkyAutoPlayerScript/raw/branch/master/gitVersion").body.string();
+		this.values.gitVersion = http.get("http://81.70.194.140:8090/robert1931/SkyAutoPlayerScript/raw/branch/master/gitVersion").body.string();
 		var periodVersion = this._global_storage.get("version", this.values.currentVersion);
 		var currentVersion = this.values.currentVersion;
 		if(periodVersion < currentVersion) {
@@ -727,11 +727,11 @@ config = {
 
 	fetchRepoFile: function(path, successCbk, failCbk) {
 		var repos = [
-			"http://81.70.194.140:8090/StageGuard/SkyAutoPlayerScript/raw/branch/master/" + path,
-			"https://cdn.jsdelivr.net/gh/StageGuard/SkyAutoPlayerScript@" + config.values.gitVersion + "/" + path,
-			"https://dl.skyautoplayerscript.stageguard.top/" + path,
-			"https://gitee.com/stageguard/SkyAutoPlayerScript/raw/master/" + path,
-			"https://raw.githubusercontent.com/StageGuard/SkyAutoPlayerScript/master/" + path
+			"http://81.70.194.140:8090/robert1931/SkyAutoPlayerScript/raw/branch/master/" + path,
+			"https://cdn.jsdelivr.net/gh/robert1931/SkyAutoPlayerScript@" + config.values.gitVersion + "/" + path,
+			"https://dl.skyautoplayerscript.robert1931.top/" + path,
+			"https://gitee.com/robert1931/SkyAutoPlayerScript/raw/master/" + path,
+			"https://raw.githubusercontent.com/robert1931/SkyAutoPlayerScript/master/" + path
 		];
 		var errorCollector = new String();
 		for(var i in repos) {
@@ -3420,7 +3420,7 @@ gui.dialogs.showProgressDialog(function(o) {
 											if(id == 0) {
 												if(!app.launch("com.coolapk.market")) toast(config.languages[config.values.lang].page_sc_upload_ca_not_exist);
 											} else if(id == 1) {
-												app.openUrl("https://github.com/StageGuard/SkyAutoplayerScript/");
+												app.openUrl("https://github.com/robert1931/SkyAutoplayerScript/");
 											}
 										},
 									});
